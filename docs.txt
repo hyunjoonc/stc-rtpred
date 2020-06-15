@@ -1,0 +1,17 @@
+predict.py: Runtime estimation
+
+data/: Training/test datasets
+  + p.csv (par. SWs)
+  + osu.csv (OSU execution results)
+
+model/: Network definition
+  + model.py
+  + {refine_stc,parallel,regression_submodel}.py
+
+weights/: Trained network weights
+  + weights.ckpt
+  + mpimodel_*.ckpt
+
+stc.py: Computing state complexity
+model_train.py: Model training code
+osu_train.py: MPI compensation model code
